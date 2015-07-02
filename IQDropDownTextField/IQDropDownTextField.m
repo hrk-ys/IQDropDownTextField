@@ -78,7 +78,7 @@
     [self setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     [self setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
     
-    self.optionalItemLabel = NSLocalizedString(@"Select", nil);
+    self.optionalItemLabel = @"選択してください";
     
     
     
