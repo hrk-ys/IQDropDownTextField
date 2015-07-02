@@ -30,7 +30,7 @@
 
 /**
  Drop Down Mode settings.
-
+ 
  `IQDropDownModeTextPicker`
  Show pickerView with provided text data.
  
@@ -46,6 +46,7 @@ typedef enum IQDropDownMode {
     IQDropDownModeTextPicker,
     IQDropDownModeTimePicker,
     IQDropDownModeDatePicker,
+    IQDropDownModeMonthDayPicker,
 }IQDropDownMode;
 
 #else
@@ -54,6 +55,7 @@ typedef NS_ENUM(NSInteger, IQDropDownMode) {
     IQDropDownModeTextPicker,
     IQDropDownModeTimePicker,
     IQDropDownModeDatePicker,
+    IQDropDownModeMonthDayPicker,
 };
 
 #endif
