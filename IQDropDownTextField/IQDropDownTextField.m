@@ -278,19 +278,21 @@
 
 - (void)setInputPickerView:(UIView*)picker
 {
+    CGFloat screenWidth = [[UIScreen mainScreen] bounds].size.width;
+    
     CGSize pickerSize = picker.bounds.size;
     CGSize buttonSize = _doneButton.bounds.size;
     _keyboradView.frame = CGRectMake(0,
                                      0,
-                                     pickerSize.width,
+                                     screenWidth,
                                      buttonSize.height + pickerSize.height);
-    _doneButton.frame   = CGRectMake(pickerSize.width - buttonSize.width,
+    _doneButton.frame   = CGRectMake(screenWidth - buttonSize.width,
                                      0,
                                      buttonSize.width,
                                      buttonSize.height);
     picker.frame        = CGRectMake(0,
                                      buttonSize.height,
-                                     pickerSize.width,
+                                     screenWidth,
                                      buttonSize.height + pickerSize.height);
     
     [_keyboradView addSubview:picker];
